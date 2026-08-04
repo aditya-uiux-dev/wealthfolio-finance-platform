@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in — Wealthfolio</title>
+    <title>Wealthfolio — Login &amp; Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -1486,199 +1486,1415 @@
     </style>
   </head>
   <body>
-    <div class="login-shell">
-      <div class="login-visual">
-        <div class="brand">
-          <div class="brand-mark">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path
-                d="M4 17L10 11L14 15L20 8"
-                stroke="white"
-                stroke-width="2.4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <div>
-            <div class="brand-name">Wealthfolio</div>
-            <div class="brand-sub">Portfolio OS</div>
-          </div>
-        </div>
-        <div class="login-visual-quote">
-          "Track every rupee across stocks, funds, gold, and crypto — and know
-          exactly where you stand."
-          <span>Aditya Kumar · Premium Member · XIRR 18.4%</span>
-        </div>
-        <svg
-          viewBox="0 0 460 140"
-          width="100%"
-          height="140"
-          style="position: relative; z-index: 1"
-        >
-          <defs>
-            <linearGradient id="lgFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#2563EB" stop-opacity="0.4" />
-              <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
-            </linearGradient>
-          </defs>
-          <polyline
-            points="0,110 40,118 80,95 120,102 160,72 200,80 240,52 280,60 320,32 360,42 400,18 440,26"
-            fill="none"
-            stroke="#4F8CFF"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <polygon
-            points="0,110 40,118 80,95 120,102 160,72 200,80 240,52 280,60 320,32 360,42 400,18 440,26 440,140 0,140"
-            fill="url(#lgFill)"
-          />
-        </svg>
-      </div>
-      <div class="login-form-side">
-        <div class="login-box">
-          <h1>Welcome back</h1>
-          <p class="sub">Sign in to see where your money stands today.</p>
-
-          <button class="oauth-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24">
-              <path
-                fill="#4285F4"
-                d="M23.5 12.3c0-.85-.08-1.66-.22-2.44H12v4.62h6.47c-.28 1.5-1.13 2.77-2.4 3.62v3h3.88c2.27-2.1 3.55-5.2 3.55-8.8z"
-              />
-              <path
-                fill="#34A853"
-                d="M12 24c3.24 0 5.96-1.08 7.95-2.9l-3.88-3c-1.08.72-2.46 1.15-4.07 1.15-3.13 0-5.78-2.11-6.73-4.96H1.27v3.1C3.25 21.3 7.3 24 12 24z"
-              />
-              <path
-                fill="#FBBC05"
-                d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.61H1.27C.46 8.24 0 10.06 0 12s.46 3.76 1.27 5.39l4-3.1z"
-              />
-              <path
-                fill="#EA4335"
-                d="M12 4.75c1.76 0 3.34.6 4.59 1.79l3.44-3.44C17.95 1.19 15.24 0 12 0 7.3 0 3.25 2.7 1.27 6.61l4 3.1C6.22 6.86 8.87 4.75 12 4.75z"
-              />
-            </svg>
-            Continue with Google
-          </button>
-
-          <div class="divider-row">or sign in with email</div>
-
-          <form id="login-form">
-            <div class="field">
-              <label>Email</label>
-              <div class="input-icon-wrap">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <rect x="3" y="5" width="18" height="14" rx="2" />
-                  <path d="M3 7L12 13L21 7" />
-                </svg>
-                <input
-                  class="input"
-                  type="email"
-                  placeholder="you@email.com"
-                  value="aditya.kumar@email.com"
-                  required
+    <div id="login-view">
+      <div class="login-shell">
+        <div class="login-visual">
+          <div class="brand">
+            <div class="brand-mark">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4 17L10 11L14 15L20 8"
+                  stroke="white"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
-              </div>
+              </svg>
             </div>
-            <div class="field">
-              <label>Password</label>
-              <div class="input-icon-wrap">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <rect x="4" y="10" width="16" height="10" rx="2" />
-                  <path d="M8 10V7A4 4 0 0116 7V10" />
-                </svg>
-                <input
-                  class="input"
-                  type="password"
-                  placeholder="••••••••"
-                  value="wealthfolio123"
-                  required
+            <div>
+              <div class="brand-name">Wealthfolio</div>
+              <div class="brand-sub">Portfolio OS</div>
+            </div>
+          </div>
+          <div class="login-visual-quote">
+            "Track every rupee across stocks, funds, gold, and crypto — and know
+            exactly where you stand."
+            <span>Aditya Kumar · Premium Member · XIRR 18.4%</span>
+          </div>
+          <svg
+            viewBox="0 0 460 140"
+            width="100%"
+            height="140"
+            style="position: relative; z-index: 1"
+          >
+            <defs>
+              <linearGradient id="lgFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#2563EB" stop-opacity="0.4" />
+                <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <polyline
+              points="0,110 40,118 80,95 120,102 160,72 200,80 240,52 280,60 320,32 360,42 400,18 440,26"
+              fill="none"
+              stroke="#4F8CFF"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <polygon
+              points="0,110 40,118 80,95 120,102 160,72 200,80 240,52 280,60 320,32 360,42 400,18 440,26 440,140 0,140"
+              fill="url(#lgFill)"
+            />
+          </svg>
+        </div>
+        <div class="login-form-side">
+          <div class="login-box">
+            <h1>Welcome back</h1>
+            <p class="sub">Sign in to see where your money stands today.</p>
+            <button type="button" class="oauth-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24">
+                <path
+                  fill="#4285F4"
+                  d="M23.5 12.3c0-.85-.08-1.66-.22-2.44H12v4.62h6.47c-.28 1.5-1.13 2.77-2.4 3.62v3h3.88c2.27-2.1 3.55-5.2 3.55-8.8z"
                 />
-                <button
-                  type="button"
-                  class="toggle-visibility"
-                  aria-label="Toggle password visibility"
-                >
+                <path
+                  fill="#34A853"
+                  d="M12 24c3.24 0 5.96-1.08 7.95-2.9l-3.88-3c-1.08.72-2.46 1.15-4.07 1.15-3.13 0-5.78-2.11-6.73-4.96H1.27v3.1C3.25 21.3 7.3 24 12 24z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.61H1.27C.46 8.24 0 10.06 0 12s.46 3.76 1.27 5.39l4-3.1z"
+                />
+                <path
+                  fill="#EA4335"
+                  d="M12 4.75c1.76 0 3.34.6 4.59 1.79l3.44-3.44C17.95 1.19 15.24 0 12 0 7.3 0 3.25 2.7 1.27 6.61l4 3.1C6.22 6.86 8.87 4.75 12 4.75z"
+                />
+              </svg>
+              Continue with Google
+            </button>
+            <div class="divider-row">or sign in with email</div>
+            <form id="login-form">
+              <div class="field">
+                <label>Email</label>
+                <div class="input-icon-wrap">
                   <svg
-                    width="16"
-                    height="16"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
                   >
-                    <path
-                      d="M2 12S5 5 12 5 22 12 22 12 19 19 12 19 2 12 2 12Z"
-                    />
-                    <circle cx="12" cy="12" r="3" />
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="M3 7L12 13L21 7" />
                   </svg>
-                </button>
+                  <input
+                    class="input"
+                    type="email"
+                    placeholder="you@email.com"
+                    value="aditya.kumar@email.com"
+                    required
+                  />
+                </div>
               </div>
-            </div>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 20px;
-              "
-            >
-              <label class="checkbox-row"
-                ><input type="checkbox" checked /> Remember me</label
-              >
-              <a
-                href="#"
+              <div class="field">
+                <label>Password</label>
+                <div class="input-icon-wrap">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect x="4" y="10" width="16" height="10" rx="2" />
+                    <path d="M8 10V7A4 4 0 0116 7V10" />
+                  </svg>
+                  <input
+                    class="input"
+                    type="password"
+                    placeholder="••••••••"
+                    value="wealthfolio123"
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="toggle-visibility"
+                    aria-label="Toggle password visibility"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M2 12S5 5 12 5 22 12 22 12 19 19 12 19 2 12 2 12Z"
+                      />
+                      <circle cx="12" cy="12" r="3" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div
                 style="
-                  font-size: 12.5px;
-                  color: var(--primary);
-                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin-bottom: 20px;
                 "
-                >Forgot password?</a
               >
+                <label class="checkbox-row"
+                  ><input type="checkbox" checked /> Remember me</label
+                >
+                <a
+                  href="javascript:void(0)"
+                  style="
+                    font-size: 12.5px;
+                    color: var(--primary);
+                    font-weight: 600;
+                  "
+                  >Forgot password?</a
+                >
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Sign in
+              </button>
+            </form>
+            <div class="login-foot">
+              Don't have an account?
+              <a href="javascript:void(0)">Create one free</a>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">
-              Sign in
-            </button>
-          </form>
-
-          <div class="login-foot">
-            Don't have an account? <a href="#">Create one free</a>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      // Wealthfolio — shared interaction layer (no build step, no frameworks)
+    <div id="app-view" style="display: none">
+      <div class="app">
+        <aside class="sidebar">
+          <div class="brand">
+            <div class="brand-mark">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4 17L10 11L14 15L20 8"
+                  stroke="white"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="brand-name">Wealthfolio</div>
+              <div class="brand-sub">Portfolio OS</div>
+            </div>
+          </div>
+          <nav class="navlist">
+            <div class="nav-label">Menu</div>
+            <a
+              class="nav-item active"
+              href="javascript:void(0)"
+              data-view="index"
+              onclick="showView('index')"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="3" width="7" height="9" rx="1.5" />
+                <rect x="14" y="3" width="7" height="5" rx="1.5" />
+                <rect x="14" y="12" width="7" height="9" rx="1.5" />
+                <rect x="3" y="16" width="7" height="5" rx="1.5" /></svg
+              >Dashboard</a
+            >
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 17L9 11L13 15L21 6" />
+                <path d="M15 6H21V12" /></svg
+              >Portfolio
+            </div>
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 2L20 6.5V17.5L12 22L4 17.5V6.5L12 2Z" />
+                <path d="M12 12L20 6.5" />
+                <path d="M12 12V22" />
+                <path d="M12 12L4 6.5" /></svg
+              >Investments
+            </div>
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 3V21H21" />
+                <path d="M7 15L11 10L14 13L20 6" /></svg
+              >Market
+            </div>
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M17 1L21 5L17 9" />
+                <path d="M3 11V9C3 6.79 4.79 5 7 5H21" />
+                <path d="M7 23L3 19L7 15" />
+                <path d="M21 13V15C21 17.21 19.21 19 17 19H3" /></svg
+              >Transactions
+            </div>
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="6" width="20" height="14" rx="2.5" />
+                <path d="M2 10H22" />
+                <path d="M17 15H18" /></svg
+              >Wallet
+            </div>
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 3V21H21" />
+                <path d="M7 17V11" />
+                <path d="M12 17V7" />
+                <path d="M17 17V13" /></svg
+              >Analytics
+            </div>
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <circle cx="12" cy="12" r="5" />
+                <circle cx="12" cy="12" r="1" fill="currentColor" /></svg
+              >Financial Goals
+            </div>
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3L14 8L19 9L14 10L12 15L10 10L5 9L10 8L12 3Z" />
+                <path
+                  d="M19 15L20 17.5L22.5 18.5L20 19.5L19 22L18 19.5L15.5 18.5L18 17.5L19 15Z"
+                /></svg
+              >AI Assistant
+            </div>
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M7 3H14L19 8V21H7V3Z" />
+                <path d="M14 3V8H19" />
+                <path d="M9.5 13H14.5" />
+                <path d="M9.5 16.5H14.5" /></svg
+              >Reports
+            </div>
+            <div class="nav-label" style="margin-top: 8px">General</div>
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M18 8A6 6 0 006 8C6 15 3 17 3 17H21S18 15 18 8Z" />
+                <path d="M13.7 21A2 2 0 0110.3 21" /></svg
+              >Notifications
+            </div>
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="8" r="4" />
+                <path
+                  d="M4 21C4 16.58 7.58 13 12 13C16.42 13 20 16.58 20 21"
+                /></svg
+              >Profile
+            </div>
+            <div
+              class="nav-item"
+              style="cursor: default; opacity: 0.55"
+              title="Coming soon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15A1.7 1.7 0 0021 13.3V10.7A1.7 1.7 0 0019.4 9L18.8 8.9A7.8 7.8 0 0018 7.3L18.3 6.7A1.7 1.7 0 0017.5 4.5L15.5 3.4A1.7 1.7 0 0013.4 4L13 4.6A7.8 7.8 0 0011 4.6L10.6 4A1.7 1.7 0 008.5 3.4L6.5 4.5A1.7 1.7 0 005.7 6.7L6 7.3A7.8 7.8 0 005.2 8.9L4.6 9A1.7 1.7 0 003 10.7V13.3A1.7 1.7 0 004.6 15L5.2 15.1A7.8 7.8 0 006 16.7L5.7 17.3A1.7 1.7 0 006.5 19.5L8.5 20.6A1.7 1.7 0 0010.6 20L11 19.4A7.8 7.8 0 0013 19.4L13.4 20A1.7 1.7 0 0015.5 20.6L17.5 19.5A1.7 1.7 0 0018.3 17.3L18 16.7A7.8 7.8 0 0018.8 15.1L19.4 15Z"
+                /></svg
+              >Settings
+            </div>
+          </nav>
+          <div class="sidebar-foot">
+            <div class="plan-card">
+              <div class="t">Upgrade to Pro</div>
+              <div class="d">
+                Real-time crypto feeds &amp; advanced tax reports.
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="sidebar-scrim"></div>
+        <main>
+          <div class="topbar">
+            <button class="menu-toggle" aria-label="Open menu">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 6H21" />
+                <path d="M3 12H21" />
+                <path d="M3 18H21" />
+              </svg>
+            </button>
+            <div class="page-heading" id="page-heading">Dashboard</div>
+            <div class="search">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="M21 21L16.65 16.65" />
+              </svg>
+              <input
+                type="text"
+                placeholder="Search stocks, funds, transactions…"
+              />
+              <span class="kbd">⌘K</span>
+            </div>
+            <div class="topbar-right">
+              <div class="icon-btn" aria-label="Notifications">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M18 8A6 6 0 006 8C6 15 3 17 3 17H21S18 15 18 8Z" />
+                  <path d="M13.7 21A2 2 0 0110.3 21" /></svg
+                ><span class="dot"></span>
+              </div>
+              <div class="icon-btn" aria-label="Wallet">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="4" width="18" height="16" rx="2.5" />
+                  <path d="M3 9H21" />
+                  <path d="M8 2V6" />
+                  <path d="M16 2V6" />
+                </svg>
+              </div>
+              <div class="profile">
+                <div class="avatar">AK</div>
+                <div>
+                  <div class="n">Aditya Kumar</div>
+                  <div class="r">Premium Member</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <section class="view" id="view-index" style="display: block">
+              <section class="hero">
+                <div>
+                  <div class="hero-eyebrow">
+                    <span class="live"></span>PORTFOLIO VALUE · UPDATED JUST NOW
+                  </div>
+                  <div class="hero-value">
+                    <span class="cur">₹</span>12,48,650
+                  </div>
+                  <div class="hero-change">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <path d="M6 15L12 9L18 15" />
+                    </svg>
+                    +12.8% this month
+                  </div>
+                  <div class="hero-sub">
+                    <div>Invested&nbsp;<b>₹10,89,200</b></div>
+                    <div>
+                      Overall gain&nbsp;<b style="color: #4ade9b">+₹1,59,450</b>
+                    </div>
+                    <div>XIRR&nbsp;<b>18.4%</b></div>
+                  </div>
+                </div>
+                <div class="hero-chart">
+                  <svg viewBox="0 0 360 130" width="100%" height="130">
+                    <defs>
+                      <linearGradient id="heroFill" x1="0" y1="0" x2="0" y2="1">
+                        <stop
+                          offset="0%"
+                          stop-color="#2563EB"
+                          stop-opacity="0.45"
+                        />
+                        <stop
+                          offset="100%"
+                          stop-color="#2563EB"
+                          stop-opacity="0"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <polyline
+                      points="0,95 30,100 60,80 90,88 120,60 150,68 180,45 210,55 240,30 270,40 300,18 330,26 360,10"
+                      fill="none"
+                      stroke="#4F8CFF"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <polygon
+                      points="0,95 30,100 60,80 90,88 120,60 150,68 180,45 210,55 240,30 270,40 300,18 330,26 360,10 360,130 0,130"
+                      fill="url(#heroFill)"
+                    />
+                    <circle cx="360" cy="10" r="4.5" fill="#4ADE9B" />
+                    <circle
+                      cx="360"
+                      cy="10"
+                      r="8"
+                      fill="none"
+                      stroke="#4ADE9B"
+                      stroke-opacity="0.4"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+              </section>
 
+              <section class="stats">
+                <div class="card stat">
+                  <div class="stat-top">
+                    <span class="stat-label">Total Investment</span>
+                    <div
+                      class="stat-icon"
+                      style="background: var(--primary-tint)"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#2563EB"
+                        stroke-width="2"
+                      >
+                        <rect x="3" y="7" width="18" height="13" rx="2" />
+                        <path
+                          d="M8 7V5.5A2.5 2.5 0 0110.5 3H13.5A2.5 2.5 0 0116 5.5V7"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="stat-val num">₹10,89,200</div>
+                  <div class="stat-delta up">Across 4 asset classes</div>
+                </div>
+                <div class="card stat">
+                  <div class="stat-top">
+                    <span class="stat-label">Total Profit</span>
+                    <div
+                      class="stat-icon"
+                      style="background: var(--accent-tint)"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#10B981"
+                        stroke-width="2"
+                      >
+                        <path d="M3 17L9 11L13 15L21 6" />
+                        <path d="M15 6H21V12" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="stat-val num">₹1,59,450</div>
+                  <div class="stat-delta up">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <path d="M6 15L12 9L18 15" /></svg
+                    >+14.6% overall
+                  </div>
+                </div>
+                <div class="card stat">
+                  <div class="stat-top">
+                    <span class="stat-label">Monthly Return</span>
+                    <div
+                      class="stat-icon"
+                      style="background: var(--primary-tint)"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#2563EB"
+                        stroke-width="2"
+                      >
+                        <path d="M3 3V21H21" />
+                        <path d="M7 14L11 10L14 13L20 7" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="stat-val num">+₹41,120</div>
+                  <div class="stat-delta up">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                    >
+                      <path d="M6 15L12 9L18 15" /></svg
+                    >+12.8% vs last month
+                  </div>
+                </div>
+                <div class="card stat">
+                  <div class="stat-top">
+                    <span class="stat-label">Risk Score</span>
+                    <div class="stat-icon" style="background: #fff7e8">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#F59E0B"
+                        stroke-width="2"
+                      >
+                        <path d="M12 2L2 21H22L12 2Z" />
+                        <path d="M12 9V14" />
+                        <circle cx="12" cy="17.5" r="0.6" fill="#F59E0B" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="stat-val">
+                    Moderate
+                    <span
+                      style="
+                        font-size: 13px;
+                        color: var(--ink-faint);
+                        font-weight: 600;
+                      "
+                      >6.4/10</span
+                    >
+                  </div>
+                  <div class="risk-bar"><i style="width: 64%"></i></div>
+                </div>
+              </section>
+
+              <section class="row2">
+                <div class="card panel">
+                  <div class="panel-head">
+                    <div>
+                      <div class="panel-title">Portfolio Allocation</div>
+                      <div class="panel-sub">By asset class</div>
+                    </div>
+                    <a class="btn btn-ghost btn-sm" href="portfolio.html"
+                      >View details</a
+                    >
+                  </div>
+                  <div
+                    class="alloc-body"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 22px;
+                      margin-top: 14px;
+                    "
+                  >
+                    <svg width="150" height="150" viewBox="0 0 150 150">
+                      <circle
+                        cx="75"
+                        cy="75"
+                        r="55"
+                        fill="none"
+                        stroke="#EEF1F6"
+                        stroke-width="20"
+                      />
+                      <circle
+                        cx="75"
+                        cy="75"
+                        r="55"
+                        fill="none"
+                        stroke="#2563EB"
+                        stroke-width="20"
+                        stroke-dasharray="159 346"
+                        stroke-dashoffset="0"
+                        transform="rotate(-90 75 75)"
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        cx="75"
+                        cy="75"
+                        r="55"
+                        fill="none"
+                        stroke="#10B981"
+                        stroke-width="20"
+                        stroke-dasharray="97 346"
+                        stroke-dashoffset="-159"
+                        transform="rotate(-90 75 75)"
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        cx="75"
+                        cy="75"
+                        r="55"
+                        fill="none"
+                        stroke="#F59E0B"
+                        stroke-width="20"
+                        stroke-dasharray="48 346"
+                        stroke-dashoffset="-256"
+                        transform="rotate(-90 75 75)"
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        cx="75"
+                        cy="75"
+                        r="55"
+                        fill="none"
+                        stroke="#6366F1"
+                        stroke-width="20"
+                        stroke-dasharray="42 346"
+                        stroke-dashoffset="-304"
+                        transform="rotate(-90 75 75)"
+                        stroke-linecap="round"
+                      />
+                      <text
+                        x="75"
+                        y="71"
+                        text-anchor="middle"
+                        font-family="Inter"
+                        font-size="19"
+                        font-weight="700"
+                        fill="#0F172A"
+                      >
+                        ₹12.5L
+                      </text>
+                      <text
+                        x="75"
+                        y="88"
+                        text-anchor="middle"
+                        font-family="Inter"
+                        font-size="10"
+                        fill="#94A3B8"
+                      >
+                        Total value
+                      </text>
+                    </svg>
+                    <div
+                      class="legend"
+                      style="
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                      "
+                    >
+                      <div
+                        class="legend-row"
+                        style="display: flex; align-items: center; gap: 10px"
+                      >
+                        <span
+                          style="
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 3px;
+                            background: #2563eb;
+                          "
+                        ></span
+                        ><span
+                          style="
+                            flex: 1;
+                            font-size: 12.5px;
+                            color: var(--ink-soft);
+                          "
+                          >Stocks</span
+                        ><span style="font-size: 13px; font-weight: 700"
+                          >46%</span
+                        ><span
+                          class="num"
+                          style="
+                            font-size: 10.5px;
+                            color: var(--ink-faint);
+                            width: 82px;
+                            text-align: right;
+                          "
+                          >₹5,74,380</span
+                        >
+                      </div>
+                      <div
+                        class="legend-row"
+                        style="display: flex; align-items: center; gap: 10px"
+                      >
+                        <span
+                          style="
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 3px;
+                            background: #10b981;
+                          "
+                        ></span
+                        ><span
+                          style="
+                            flex: 1;
+                            font-size: 12.5px;
+                            color: var(--ink-soft);
+                          "
+                          >Mutual Funds</span
+                        ><span style="font-size: 13px; font-weight: 700"
+                          >28%</span
+                        ><span
+                          class="num"
+                          style="
+                            font-size: 10.5px;
+                            color: var(--ink-faint);
+                            width: 82px;
+                            text-align: right;
+                          "
+                          >₹3,49,620</span
+                        >
+                      </div>
+                      <div
+                        class="legend-row"
+                        style="display: flex; align-items: center; gap: 10px"
+                      >
+                        <span
+                          style="
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 3px;
+                            background: #f59e0b;
+                          "
+                        ></span
+                        ><span
+                          style="
+                            flex: 1;
+                            font-size: 12.5px;
+                            color: var(--ink-soft);
+                          "
+                          >Gold</span
+                        ><span style="font-size: 13px; font-weight: 700"
+                          >14%</span
+                        ><span
+                          class="num"
+                          style="
+                            font-size: 10.5px;
+                            color: var(--ink-faint);
+                            width: 82px;
+                            text-align: right;
+                          "
+                          >₹1,74,810</span
+                        >
+                      </div>
+                      <div
+                        class="legend-row"
+                        style="display: flex; align-items: center; gap: 10px"
+                      >
+                        <span
+                          style="
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 3px;
+                            background: #6366f1;
+                          "
+                        ></span
+                        ><span
+                          style="
+                            flex: 1;
+                            font-size: 12.5px;
+                            color: var(--ink-soft);
+                          "
+                          >Crypto</span
+                        ><span style="font-size: 13px; font-weight: 700"
+                          >12%</span
+                        ><span
+                          class="num"
+                          style="
+                            font-size: 10.5px;
+                            color: var(--ink-faint);
+                            width: 82px;
+                            text-align: right;
+                          "
+                          >₹1,49,840</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card panel">
+                  <div class="panel-head">
+                    <div>
+                      <div class="panel-title">Market Overview</div>
+                      <div class="panel-sub">
+                        Live index &amp; commodity snapshot
+                      </div>
+                    </div>
+                    <div class="pill-tabs">
+                      <span class="on">1D</span><span>1W</span><span>1M</span>
+                    </div>
+                  </div>
+                  <div
+                    class="market-grid"
+                    style="
+                      display: grid;
+                      grid-template-columns: 1fr 1fr;
+                      gap: 12px;
+                      margin-top: 14px;
+                    "
+                  >
+                    <div
+                      class="mkt-card"
+                      style="
+                        border: 1px solid var(--border);
+                        border-radius: 11px;
+                        padding: 13px 14px;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                        "
+                      >
+                        <span
+                          style="
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: var(--ink-soft);
+                          "
+                          >NIFTY 50</span
+                        ><span class="badge neutral">NSE</span>
+                      </div>
+                      <div
+                        class="num"
+                        style="
+                          font-size: 17px;
+                          font-weight: 700;
+                          margin-top: 8px;
+                        "
+                      >
+                        24,812.35
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                          margin-top: 8px;
+                        "
+                      >
+                        <span
+                          class="up"
+                          style="font-size: 11.5px; font-weight: 600"
+                          >▲ 0.74%</span
+                        >
+                        <svg width="60" height="20" viewBox="0 0 60 20">
+                          <polyline
+                            points="0,15 10,12 20,14 30,8 40,10 50,4 60,6"
+                            fill="none"
+                            stroke="#10B981"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="mkt-card"
+                      style="
+                        border: 1px solid var(--border);
+                        border-radius: 11px;
+                        padding: 13px 14px;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                        "
+                      >
+                        <span
+                          style="
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: var(--ink-soft);
+                          "
+                          >SENSEX</span
+                        ><span class="badge neutral">BSE</span>
+                      </div>
+                      <div
+                        class="num"
+                        style="
+                          font-size: 17px;
+                          font-weight: 700;
+                          margin-top: 8px;
+                        "
+                      >
+                        81,245.10
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                          margin-top: 8px;
+                        "
+                      >
+                        <span
+                          class="up"
+                          style="font-size: 11.5px; font-weight: 600"
+                          >▲ 0.61%</span
+                        >
+                        <svg width="60" height="20" viewBox="0 0 60 20">
+                          <polyline
+                            points="0,14 10,13 20,10 30,11 40,7 50,8 60,3"
+                            fill="none"
+                            stroke="#10B981"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="mkt-card"
+                      style="
+                        border: 1px solid var(--border);
+                        border-radius: 11px;
+                        padding: 13px 14px;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                        "
+                      >
+                        <span
+                          style="
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: var(--ink-soft);
+                          "
+                          >Bitcoin</span
+                        ><span class="badge neutral">BTC</span>
+                      </div>
+                      <div
+                        class="num"
+                        style="
+                          font-size: 17px;
+                          font-weight: 700;
+                          margin-top: 8px;
+                        "
+                      >
+                        ₹86,42,900
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                          margin-top: 8px;
+                        "
+                      >
+                        <span
+                          class="down"
+                          style="font-size: 11.5px; font-weight: 600"
+                          >▼ 1.92%</span
+                        >
+                        <svg width="60" height="20" viewBox="0 0 60 20">
+                          <polyline
+                            points="0,4 10,7 20,6 30,11 40,9 50,15 60,16"
+                            fill="none"
+                            stroke="#EF4444"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="mkt-card"
+                      style="
+                        border: 1px solid var(--border);
+                        border-radius: 11px;
+                        padding: 13px 14px;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                        "
+                      >
+                        <span
+                          style="
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: var(--ink-soft);
+                          "
+                          >Gold (24K)</span
+                        ><span class="badge neutral">MCX / 10g</span>
+                      </div>
+                      <div
+                        class="num"
+                        style="
+                          font-size: 17px;
+                          font-weight: 700;
+                          margin-top: 8px;
+                        "
+                      >
+                        ₹73,540
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                          margin-top: 8px;
+                        "
+                      >
+                        <span
+                          class="up"
+                          style="font-size: 11.5px; font-weight: 600"
+                          >▲ 0.28%</span
+                        >
+                        <svg width="60" height="20" viewBox="0 0 60 20">
+                          <polyline
+                            points="0,12 10,11 20,13 30,10 40,9 50,8 60,6"
+                            fill="none"
+                            stroke="#10B981"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="card table-wrap panel">
+                <div class="panel-head">
+                  <div>
+                    <div class="panel-title">Recent Transactions</div>
+                    <div class="panel-sub">
+                      Latest activity across your accounts
+                    </div>
+                  </div>
+                  <a class="btn btn-ghost btn-sm" href="transactions.html"
+                    >View all</a
+                  >
+                </div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Asset</th>
+                      <th>Type</th>
+                      <th>Amount</th>
+                      <th>Units</th>
+                      <th>Date</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="asset-cell">
+                          <div class="asset-ic" style="background: #111827">
+                            TS
+                          </div>
+                          <div>
+                            <div class="asset-name">Tesla Inc.</div>
+                            <div class="asset-sym">TSLA · Stocks</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td><span class="badge buy">Buy</span></td>
+                      <td class="t-amt num">₹42,300</td>
+                      <td class="num">6.5</td>
+                      <td class="t-date">28 Jul 2026</td>
+                      <td>
+                        <span
+                          class="badge"
+                          style="background: var(--accent-tint); color: #0a8054"
+                          >Completed</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="asset-cell">
+                          <div class="asset-ic" style="background: #2563eb">
+                            RI
+                          </div>
+                          <div>
+                            <div class="asset-name">Reliance Industries</div>
+                            <div class="asset-sym">RELIANCE · Stocks</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td><span class="badge sell">Sell</span></td>
+                      <td class="t-amt num">₹18,940</td>
+                      <td class="num">14</td>
+                      <td class="t-date">26 Jul 2026</td>
+                      <td>
+                        <span
+                          class="badge"
+                          style="background: var(--accent-tint); color: #0a8054"
+                          >Completed</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="asset-cell">
+                          <div class="asset-ic" style="background: #f59e0b">
+                            AX
+                          </div>
+                          <div>
+                            <div class="asset-name">Axis Bluechip Fund</div>
+                            <div class="asset-sym">MF · SIP</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td><span class="badge buy">Buy</span></td>
+                      <td class="t-amt num">₹10,000</td>
+                      <td class="num">62.4</td>
+                      <td class="t-date">25 Jul 2026</td>
+                      <td>
+                        <span
+                          class="badge"
+                          style="background: var(--accent-tint); color: #0a8054"
+                          >Completed</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="asset-cell">
+                          <div class="asset-ic" style="background: #6366f1">
+                            BT
+                          </div>
+                          <div>
+                            <div class="asset-name">Bitcoin</div>
+                            <div class="asset-sym">BTC · Crypto</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td><span class="badge buy">Buy</span></td>
+                      <td class="t-amt num">₹25,000</td>
+                      <td class="num">0.0029</td>
+                      <td class="t-date">23 Jul 2026</td>
+                      <td>
+                        <span
+                          class="badge"
+                          style="background: #fff7e8; color: #b7791f"
+                          >Pending</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="asset-cell">
+                          <div class="asset-ic" style="background: #0ea5e9">
+                            IN
+                          </div>
+                          <div>
+                            <div class="asset-name">Infosys Ltd.</div>
+                            <div class="asset-sym">INFY · Dividend</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td><span class="badge div">Dividend</span></td>
+                      <td class="t-amt num">₹1,240</td>
+                      <td class="num">—</td>
+                      <td class="t-date">21 Jul 2026</td>
+                      <td>
+                        <span
+                          class="badge"
+                          style="background: var(--accent-tint); color: #0a8054"
+                          >Credited</span
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+
+              <section class="card panel" style="margin-top: 18px">
+                <div class="panel-head">
+                  <div>
+                    <div class="panel-title">Watchlist</div>
+                    <div class="panel-sub">Assets you're tracking</div>
+                  </div>
+                  <a class="btn btn-ghost btn-sm" href="market.html"
+                    >Open market</a
+                  >
+                </div>
+                <div class="wl-list">
+                  <div class="wl-row">
+                    <div class="wl-co">
+                      <div class="wl-ic" style="background: #111827">A</div>
+                      <div>
+                        <div class="wl-name">Apple Inc.</div>
+                        <div class="wl-sym">AAPL</div>
+                      </div>
+                    </div>
+                    <div class="wl-price num">$228.40</div>
+                    <svg width="80" height="24" viewBox="0 0 80 24">
+                      <polyline
+                        points="0,18 12,15 24,17 36,10 48,12 60,6 72,8 80,4"
+                        fill="none"
+                        stroke="#10B981"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <div class="wl-delta up">▲ 1.34%</div>
+                  </div>
+                  <div class="wl-row">
+                    <div class="wl-co">
+                      <div class="wl-ic" style="background: #dc2626">T</div>
+                      <div>
+                        <div class="wl-name">Tesla Inc.</div>
+                        <div class="wl-sym">TSLA</div>
+                      </div>
+                    </div>
+                    <div class="wl-price num">$318.92</div>
+                    <svg width="80" height="24" viewBox="0 0 80 24">
+                      <polyline
+                        points="0,6 12,9 24,7 36,13 48,11 60,17 72,15 80,20"
+                        fill="none"
+                        stroke="#EF4444"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <div class="wl-delta down">▼ 2.11%</div>
+                  </div>
+                  <div class="wl-row">
+                    <div class="wl-co">
+                      <div class="wl-ic" style="background: #2563eb">R</div>
+                      <div>
+                        <div class="wl-name">Reliance Industries</div>
+                        <div class="wl-sym">RELIANCE</div>
+                      </div>
+                    </div>
+                    <div class="wl-price num">₹2,984.10</div>
+                    <svg width="80" height="24" viewBox="0 0 80 24">
+                      <polyline
+                        points="0,17 12,14 24,15 36,9 48,10 60,5 72,7 80,3"
+                        fill="none"
+                        stroke="#10B981"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <div class="wl-delta up">▲ 0.86%</div>
+                  </div>
+                </div>
+              </section>
+
+              <footer class="credit">
+                Wealthfolio · Personal Investment &amp; Portfolio Tracker · Data
+                shown is illustrative
+              </footer>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script>
       document.addEventListener("DOMContentLoaded", () => {
-        // Mobile sidebar toggle
         const menuToggle = document.querySelector(".menu-toggle");
         const sidebar = document.querySelector(".sidebar");
         const scrim = document.querySelector(".sidebar-scrim");
-        function openSidebar() {
+        menuToggle?.addEventListener("click", () => {
           sidebar?.classList.add("open");
           scrim?.classList.add("show");
-        }
-        function closeSidebar() {
+        });
+        scrim?.addEventListener("click", () => {
           sidebar?.classList.remove("open");
           scrim?.classList.remove("show");
-        }
-        menuToggle?.addEventListener("click", openSidebar);
-        scrim?.addEventListener("click", closeSidebar);
+        });
 
-        // Generic pill-tab groups
         document.querySelectorAll(".pill-tabs").forEach((group) => {
           group.querySelectorAll("span").forEach((tab) => {
             tab.addEventListener("click", () => {
@@ -1690,28 +2906,6 @@
           });
         });
 
-        // Generic filter chips (multi-toggle within a row)
-        document.querySelectorAll(".filter-chip-row").forEach((row) => {
-          row.querySelectorAll(".filter-chip").forEach((chip) => {
-            chip.addEventListener("click", () => {
-              if (row.dataset.multi === "true") {
-                chip.classList.toggle("on");
-              } else {
-                row
-                  .querySelectorAll(".filter-chip")
-                  .forEach((c) => c.classList.remove("on"));
-                chip.classList.add("on");
-              }
-            });
-          });
-        });
-
-        // Toggle switches
-        document.querySelectorAll(".toggle").forEach((t) => {
-          t.addEventListener("click", () => t.classList.toggle("on"));
-        });
-
-        // Password visibility
         document.querySelectorAll(".toggle-visibility").forEach((btn) => {
           btn.addEventListener("click", () => {
             const input = btn
@@ -1721,89 +2915,19 @@
           });
         });
 
-        // Settings side-nav (single page, scroll-anchored sections)
-        document.querySelectorAll(".settings-nav a").forEach((link) => {
-          link.addEventListener("click", (e) => {
-            document
-              .querySelectorAll(".settings-nav a")
-              .forEach((l) => l.classList.remove("on"));
-            link.classList.add("on");
-          });
-        });
-
-        // Swatches (theme color demo)
-        document.querySelectorAll(".swatch-row").forEach((row) => {
-          row.querySelectorAll(".swatch").forEach((s) => {
-            s.addEventListener("click", () => {
-              row
-                .querySelectorAll(".swatch")
-                .forEach((x) => x.classList.remove("on"));
-              s.classList.add("on");
-            });
-          });
-        });
-
-        // AI Assistant demo chat
-        const chatForm = document.getElementById("chat-input-row");
-        const chatMsgs = document.getElementById("chat-msgs");
-        const chatInput = document.getElementById("chat-input");
-
-        function addMessage(text, who) {
-          if (!chatMsgs) return;
-          const wrap = document.createElement("div");
-          wrap.className = "msg " + who;
-          wrap.innerHTML = `
-      <div class="msg-avatar ${who === "user" ? "you" : "ai"}">${
-            who === "user" ? "AK" : "AI"
-          }</div>
-      <div class="msg-bubble">${text}</div>
-    `;
-          chatMsgs.appendChild(wrap);
-          chatMsgs.scrollTop = chatMsgs.scrollHeight;
-        }
-
-        const canned = [
-          "Based on your current allocation, you're slightly overweight in single-stock equity relative to your Moderate risk profile — consider directing your next SIP toward diversified mutual funds.",
-          "Your Emergency Fund goal is 62% funded. At the current monthly contribution you're on track to reach it about 3 months ahead of your deadline.",
-          "Gold has been a stabilizer for your portfolio this quarter — up while equities were flat. No action needed, just flagging it.",
-          "Your XIRR of 18.4% is running ahead of the NIFTY 50's trailing 1-year return. Concentration in a few large positions is the main driver — worth knowing for risk purposes.",
-        ];
-        let cannedIndex = 0;
-
-        function sendChat() {
-          if (!chatInput || !chatInput.value.trim()) return;
-          addMessage(chatInput.value.trim(), "user");
-          chatInput.value = "";
-          setTimeout(() => {
-            addMessage(canned[cannedIndex % canned.length], "ai");
-            cannedIndex++;
-          }, 500);
-        }
-
-        chatForm?.addEventListener("submit", (e) => {
-          e.preventDefault();
-          sendChat();
-        });
         document
-          .getElementById("chat-send")
-          ?.addEventListener("click", sendChat);
-        document.querySelectorAll(".suggestion-chip").forEach((chip) => {
-          chip.addEventListener("click", () => {
-            addMessage(chip.textContent.trim(), "user");
-            setTimeout(() => {
-              addMessage(canned[cannedIndex % canned.length], "ai");
-              cannedIndex++;
-            }, 500);
+          .getElementById("login-form")
+          ?.addEventListener("submit", (e) => {
+            e.preventDefault();
+            document.getElementById("login-view").style.display = "none";
+            document.getElementById("app-view").style.display = "block";
           });
-        });
-
-        // Login form — demo only, no backend
-        const loginForm = document.getElementById("login-form");
-        loginForm?.addEventListener("submit", (e) => {
-          e.preventDefault();
-          window.location.href = "index.html";
-        });
       });
+
+      function showView(key) {
+        // Only Dashboard exists in this two-page build; kept so the sidebar's
+        // active-item logic and future pages can hook in without changes.
+      }
     </script>
   </body>
 </html>
