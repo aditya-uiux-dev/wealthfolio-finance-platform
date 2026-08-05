@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wealthfolio — Login &amp; Dashboard</title>
+    <title>Wealthfolio — Login, Dashboard &amp; Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -1697,12 +1697,12 @@
                 <rect x="3" y="16" width="7" height="5" rx="1.5" /></svg
               >Dashboard</a
             >
-            <div
+            <a
               class="nav-item"
-              style="cursor: default; opacity: 0.55"
-              title="Coming soon"
-            >
-              <svg
+              href="javascript:void(0)"
+              data-view="portfolio"
+              onclick="showView('portfolio')"
+              ><svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -1710,8 +1710,8 @@
               >
                 <path d="M3 17L9 11L13 15L21 6" />
                 <path d="M15 6H21V12" /></svg
-              >Portfolio
-            </div>
+              >Portfolio</a
+            >
             <div
               class="nav-item"
               style="cursor: default; opacity: 0.55"
@@ -2167,7 +2167,10 @@
                       <div class="panel-title">Portfolio Allocation</div>
                       <div class="panel-sub">By asset class</div>
                     </div>
-                    <a class="btn btn-ghost btn-sm" href="portfolio.html"
+                    <a
+                      class="btn btn-ghost btn-sm"
+                      href="javascript:void(0)"
+                      onclick="showView('portfolio')"
                       >View details</a
                     >
                   </div>
@@ -2661,7 +2664,11 @@
                       Latest activity across your accounts
                     </div>
                   </div>
-                  <a class="btn btn-ghost btn-sm" href="transactions.html"
+                  <a
+                    class="btn btn-ghost btn-sm"
+                    href="javascript:void(0)"
+                    title="Coming soon"
+                    style="cursor: default; opacity: 0.6"
                     >View all</a
                   >
                 </div>
@@ -2807,7 +2814,11 @@
                     <div class="panel-title">Watchlist</div>
                     <div class="panel-sub">Assets you're tracking</div>
                   </div>
-                  <a class="btn btn-ghost btn-sm" href="market.html"
+                  <a
+                    class="btn btn-ghost btn-sm"
+                    href="javascript:void(0)"
+                    title="Coming soon"
+                    style="cursor: default; opacity: 0.6"
                     >Open market</a
                   >
                 </div>
@@ -2877,6 +2888,490 @@
                 shown is illustrative
               </footer>
             </section>
+            <section class="view" id="view-portfolio" style="display: none">
+              <div class="page-head">
+                <div>
+                  <div class="breadcrumb">
+                    Wealthfolio / <span>Portfolio</span>
+                  </div>
+                  <h1>Portfolio</h1>
+                  <p>
+                    Everything you hold, in one place — updated as prices move.
+                  </p>
+                </div>
+                <div class="page-actions">
+                  <a
+                    class="btn btn-secondary"
+                    href="javascript:void(0)"
+                    title="Coming soon"
+                    style="cursor: default; opacity: 0.6"
+                    >Export report</a
+                  ><a
+                    class="btn btn-primary"
+                    href="javascript:void(0)"
+                    title="Coming soon"
+                    style="cursor: default; opacity: 0.6"
+                    >+ Add holding</a
+                  >
+                </div>
+              </div>
+
+              <section class="stats">
+                <div class="card stat">
+                  <div class="stat-top">
+                    <span class="stat-label">Current Value</span>
+                    <div
+                      class="stat-icon"
+                      style="background: var(--primary-tint)"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#2563EB"
+                        stroke-width="2"
+                      >
+                        <path d="M3 17L9 11L13 15L21 6" />
+                        <path d="M15 6H21V12" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="stat-val num">₹12,48,650</div>
+                  <div class="stat-delta up">+12.8% this month</div>
+                </div>
+                <div class="card stat">
+                  <div class="stat-top">
+                    <span class="stat-label">Invested Amount</span>
+                    <div class="stat-icon" style="background: var(--bg)">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#475569"
+                        stroke-width="2"
+                      >
+                        <rect x="3" y="7" width="18" height="13" rx="2" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="stat-val num">₹10,89,200</div>
+                  <div class="stat-delta" style="color: var(--ink-faint)">
+                    Cost basis
+                  </div>
+                </div>
+                <div class="card stat">
+                  <div class="stat-top">
+                    <span class="stat-label">Unrealized Gain</span>
+                    <div
+                      class="stat-icon"
+                      style="background: var(--accent-tint)"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#10B981"
+                        stroke-width="2"
+                      >
+                        <path d="M6 15L12 9L18 15" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="stat-val num">+₹1,59,450</div>
+                  <div class="stat-delta up">+14.6% overall</div>
+                </div>
+                <div class="card stat">
+                  <div class="stat-top">
+                    <span class="stat-label">XIRR</span>
+                    <div class="stat-icon" style="background: #fff7e8">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#F59E0B"
+                        stroke-width="2"
+                      >
+                        <path d="M3 3V21H21" />
+                        <path d="M7 15L11 10L14 13L20 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="stat-val num">18.4%</div>
+                  <div class="stat-delta up">Beats NIFTY 50, 1Y</div>
+                </div>
+              </section>
+
+              <section class="row2">
+                <div class="card panel">
+                  <div class="panel-head">
+                    <div>
+                      <div class="panel-title">Performance</div>
+                      <div class="panel-sub">Portfolio value over time</div>
+                    </div>
+                    <div class="pill-tabs">
+                      <span>1M</span><span class="on">6M</span><span>1Y</span
+                      ><span>All</span>
+                    </div>
+                  </div>
+                  <svg
+                    viewBox="0 0 520 200"
+                    width="100%"
+                    height="200"
+                    style="margin-top: 10px"
+                  >
+                    <defs>
+                      <linearGradient id="pfFill" x1="0" y1="0" x2="0" y2="1">
+                        <stop
+                          offset="0%"
+                          stop-color="#2563EB"
+                          stop-opacity="0.35"
+                        />
+                        <stop
+                          offset="100%"
+                          stop-color="#2563EB"
+                          stop-opacity="0"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <polyline
+                      points="0,150 40,160 80,130 120,140 160,100 200,115 240,80 280,95 320,55 360,70 400,35 440,48 480,20 520,15"
+                      fill="none"
+                      stroke="#2563EB"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <polygon
+                      points="0,150 40,160 80,130 120,140 160,100 200,115 240,80 280,95 320,55 360,70 400,35 440,48 480,20 520,15 520,200 0,200"
+                      fill="url(#pfFill)"
+                    />
+                    <line
+                      x1="0"
+                      y1="0"
+                      x2="0"
+                      y2="200"
+                      stroke="var(--border)"
+                    />
+                    <line
+                      x1="0"
+                      y1="0"
+                      x2="520"
+                      y2="0"
+                      stroke="var(--border)"
+                    />
+                  </svg>
+                </div>
+                <div class="card panel">
+                  <div class="panel-head">
+                    <div>
+                      <div class="panel-title">Allocation</div>
+                      <div class="panel-sub">By asset class</div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 22px;
+                      margin-top: 14px;
+                    "
+                  >
+                    <svg width="130" height="130" viewBox="0 0 150 150">
+                      <circle
+                        cx="75"
+                        cy="75"
+                        r="55"
+                        fill="none"
+                        stroke="#EEF1F6"
+                        stroke-width="20"
+                      />
+                      <circle
+                        cx="75"
+                        cy="75"
+                        r="55"
+                        fill="none"
+                        stroke="#2563EB"
+                        stroke-width="20"
+                        stroke-dasharray="159 346"
+                        transform="rotate(-90 75 75)"
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        cx="75"
+                        cy="75"
+                        r="55"
+                        fill="none"
+                        stroke="#10B981"
+                        stroke-width="20"
+                        stroke-dasharray="97 346"
+                        stroke-dashoffset="-159"
+                        transform="rotate(-90 75 75)"
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        cx="75"
+                        cy="75"
+                        r="55"
+                        fill="none"
+                        stroke="#F59E0B"
+                        stroke-width="20"
+                        stroke-dasharray="48 346"
+                        stroke-dashoffset="-256"
+                        transform="rotate(-90 75 75)"
+                        stroke-linecap="round"
+                      />
+                      <circle
+                        cx="75"
+                        cy="75"
+                        r="55"
+                        fill="none"
+                        stroke="#6366F1"
+                        stroke-width="20"
+                        stroke-dasharray="42 346"
+                        stroke-dashoffset="-304"
+                        transform="rotate(-90 75 75)"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    <div
+                      style="
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 11px;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          gap: 9px;
+                          font-size: 12.5px;
+                        "
+                      >
+                        <span
+                          style="
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 3px;
+                            background: #2563eb;
+                          "
+                        ></span
+                        ><span style="flex: 1; color: var(--ink-soft)"
+                          >Stocks</span
+                        ><b>46%</b>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          gap: 9px;
+                          font-size: 12.5px;
+                        "
+                      >
+                        <span
+                          style="
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 3px;
+                            background: #10b981;
+                          "
+                        ></span
+                        ><span style="flex: 1; color: var(--ink-soft)"
+                          >Mutual Funds</span
+                        ><b>28%</b>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          gap: 9px;
+                          font-size: 12.5px;
+                        "
+                      >
+                        <span
+                          style="
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 3px;
+                            background: #f59e0b;
+                          "
+                        ></span
+                        ><span style="flex: 1; color: var(--ink-soft)"
+                          >Gold</span
+                        ><b>14%</b>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          gap: 9px;
+                          font-size: 12.5px;
+                        "
+                      >
+                        <span
+                          style="
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 3px;
+                            background: #6366f1;
+                          "
+                        ></span
+                        ><span style="flex: 1; color: var(--ink-soft)"
+                          >Crypto</span
+                        ><b>12%</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="card panel" style="margin-top: 18px">
+                <div class="panel-head">
+                  <div>
+                    <div class="panel-title">Holdings</div>
+                    <div class="panel-sub">
+                      14 positions across 4 asset classes
+                    </div>
+                  </div>
+                  <div class="filter-chip-row">
+                    <span class="filter-chip on">All</span
+                    ><span class="filter-chip">Stocks</span
+                    ><span class="filter-chip">Mutual Funds</span
+                    ><span class="filter-chip">Gold</span
+                    ><span class="filter-chip">Crypto</span>
+                  </div>
+                </div>
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Asset</th>
+                        <th>Qty</th>
+                        <th>Avg. Cost</th>
+                        <th>LTP</th>
+                        <th>Value</th>
+                        <th>P&amp;L</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="clickable">
+                        <td>
+                          <div class="asset-cell">
+                            <div class="asset-ic" style="background: #111827">
+                              TS
+                            </div>
+                            <div>
+                              <div class="asset-name">Tesla Inc.</div>
+                              <div class="asset-sym">TSLA</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="num">18.5</td>
+                        <td class="num">$286.20</td>
+                        <td class="num">$318.92</td>
+                        <td class="t-amt num">₹4,89,300</td>
+                        <td class="up num">+11.4%</td>
+                      </tr>
+                      <tr class="clickable">
+                        <td>
+                          <div class="asset-cell">
+                            <div class="asset-ic" style="background: #2563eb">
+                              RI
+                            </div>
+                            <div>
+                              <div class="asset-name">Reliance Industries</div>
+                              <div class="asset-sym">RELIANCE</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="num">64</td>
+                        <td class="num">₹2,710</td>
+                        <td class="num">₹2,984.10</td>
+                        <td class="t-amt num">₹1,90,982</td>
+                        <td class="up num">+10.1%</td>
+                      </tr>
+                      <tr class="clickable">
+                        <td>
+                          <div class="asset-cell">
+                            <div class="asset-ic" style="background: #0ea5e9">
+                              IN
+                            </div>
+                            <div>
+                              <div class="asset-name">Infosys Ltd.</div>
+                              <div class="asset-sym">INFY</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="num">120</td>
+                        <td class="num">₹1,940</td>
+                        <td class="num">₹1,876.30</td>
+                        <td class="t-amt num">₹2,25,156</td>
+                        <td class="down num">-3.3%</td>
+                      </tr>
+                      <tr class="clickable">
+                        <td>
+                          <div class="asset-cell">
+                            <div class="asset-ic" style="background: #f59e0b">
+                              AX
+                            </div>
+                            <div>
+                              <div class="asset-name">Axis Bluechip Fund</div>
+                              <div class="asset-sym">MF Direct Growth</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="num">1,842</td>
+                        <td class="num">₹168.40</td>
+                        <td class="num">₹189.90</td>
+                        <td class="t-amt num">₹3,49,620</td>
+                        <td class="up num">+12.8%</td>
+                      </tr>
+                      <tr class="clickable">
+                        <td>
+                          <div class="asset-cell">
+                            <div class="asset-ic" style="background: #eab308">
+                              AU
+                            </div>
+                            <div>
+                              <div class="asset-name">Sovereign Gold Bond</div>
+                              <div class="asset-sym">SGB · 24K</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="num">24g</td>
+                        <td class="num">₹6,120/g</td>
+                        <td class="num">₹7,285/g</td>
+                        <td class="t-amt num">₹1,74,810</td>
+                        <td class="up num">+19.0%</td>
+                      </tr>
+                      <tr class="clickable">
+                        <td>
+                          <div class="asset-cell">
+                            <div class="asset-ic" style="background: #6366f1">
+                              BT
+                            </div>
+                            <div>
+                              <div class="asset-name">Bitcoin</div>
+                              <div class="asset-sym">BTC</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="num">0.174</td>
+                        <td class="num">₹78,20,000</td>
+                        <td class="num">₹86,42,900</td>
+                        <td class="t-amt num">₹1,49,840</td>
+                        <td class="up num">+10.5%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="pagination">
+                  <div>Showing 1–6 of 14 holdings</div>
+                  <div class="pg-btns">
+                    <button class="pg-btn on">1</button
+                    ><button class="pg-btn">2</button
+                    ><button class="pg-btn">3</button>
+                  </div>
+                </div>
+              </section>
+            </section>
           </div>
         </main>
       </div>
@@ -2906,6 +3401,17 @@
           });
         });
 
+        document.querySelectorAll(".filter-chip-row").forEach((row) => {
+          row.querySelectorAll(".filter-chip").forEach((chip) => {
+            chip.addEventListener("click", () => {
+              row
+                .querySelectorAll(".filter-chip")
+                .forEach((c) => c.classList.remove("on"));
+              chip.classList.add("on");
+            });
+          });
+        });
+
         document.querySelectorAll(".toggle-visibility").forEach((btn) => {
           btn.addEventListener("click", () => {
             const input = btn
@@ -2924,9 +3430,24 @@
           });
       });
 
+      const VIEW_TITLES = { index: "Dashboard", portfolio: "Portfolio" };
+
       function showView(key) {
-        // Only Dashboard exists in this two-page build; kept so the sidebar's
-        // active-item logic and future pages can hook in without changes.
+        if (!VIEW_TITLES[key]) return; // not a page built into this file
+        document.querySelectorAll(".view").forEach((v) => {
+          v.style.display = "none";
+        });
+        const target = document.getElementById("view-" + key);
+        if (target) target.style.display = "block";
+        document.querySelectorAll(".nav-item[data-view]").forEach((n) => {
+          n.classList.toggle("active", n.getAttribute("data-view") === key);
+        });
+        const heading = document.getElementById("page-heading");
+        if (heading) heading.textContent = VIEW_TITLES[key];
+        document.title = VIEW_TITLES[key] + " — Wealthfolio";
+        document.querySelector(".sidebar")?.classList.remove("open");
+        document.querySelector(".sidebar-scrim")?.classList.remove("show");
+        window.scrollTo(0, 0);
       }
     </script>
   </body>
