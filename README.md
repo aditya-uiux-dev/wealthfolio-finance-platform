@@ -1,49 +1,62 @@
 # 💰 Wealthfolio
 
-> A modern personal finance and investment dashboard designed to help users manage their wealth, track investments, monitor portfolio performance, and gain financial insights through a clean and intuitive interface.
+> A modern personal finance and investment platform built with HTML, CSS, and JavaScript. Wealthfolio helps users monitor investments, track portfolio performance, and manage personal finances through a clean, intuitive, and responsive interface.
 
-🚧 **Project Status:** Under Active Development
+🚧 **Status:** Active Development
+
+---
+
+## 🌐 Live Demo
+
+🔗 https://wealthfolio-finance-platform.netlify.app/
 
 ---
 
 ## ✨ Features
 
 ### 🔐 Authentication
-- Login
-- Sign Up *(Coming Soon)*
-- Forgot Password *(Coming Soon)*
-- Reset Password *(Coming Soon)*
+- Login Page
+- Portfolio Dashboard
+- Portfolio Page
+- Modern UI Design
+- Responsive Layout
+- Smooth Animations
+- Clean Navigation
 
 ### 📊 Dashboard
-- Portfolio Overview
+- Total Balance
 - Total Investment
 - Total Profit
-- Monthly Return
-- Risk Score
+- Monthly Returns
 - Portfolio Allocation
 - Market Overview
 - Recent Transactions
+- Financial Statistics
 
 ### 💼 Portfolio
-- Portfolio Summary
+- Investment Summary
 - Asset Allocation
 - Holdings Overview
-- Investment Performance
-
-### 🚀 Upcoming Features
-
-- Investments
-- Analytics
-- Transactions
-- Wallet
-- AI Financial Assistant
-- Notifications
-- Dark Mode
-- Mobile Responsive Version
+- Performance Tracking
 
 ---
 
-# 🛠️ Tech Stack
+## 🚀 Upcoming Features
+
+- Investment Management
+- Wallet
+- Analytics
+- Transactions
+- Notifications
+- User Settings
+- Dark Mode
+- AI Financial Assistant
+- Backend Integration
+- Real-time Stock API
+
+---
+
+# 🛠 Tech Stack
 
 - HTML5
 - CSS3
@@ -52,46 +65,48 @@
 
 ---
 
-# 📂 Project Structure
+# 📂 Folder Structure
 
 ```
-wealthfolio-finance-platform
+wealthfolio-finance-platform/
 │
 ├── index.html
 ├── styles.css
 ├── package.json
 ├── README.md
-└── assets
+└── .codesandbox/
 ```
 
 ---
 
 # 🎯 Project Goal
 
-The goal of Wealthfolio is to build a complete finance management platform that combines modern UI/UX design with frontend development best practices.
+The purpose of this project is to build a modern finance platform while improving frontend development skills and creating a professional portfolio project.
 
-This project is being built as a portfolio project to demonstrate:
+This project demonstrates:
 
 - UI/UX Design
 - Frontend Development
 - Dashboard Design
+- Portfolio Design
 - Responsive Design
-- Clean Code Structure
+- Clean Code Practices
 
 ---
 
-# 🗺️ Roadmap
+# 🗺 Roadmap
 
-- ✅ Authentication Module
+- ✅ Login Page
 - ✅ Dashboard
-- ✅ Portfolio
+- ✅ Portfolio Page
 - ⏳ Investments
+- ⏳ Wallet
 - ⏳ Analytics
 - ⏳ Transactions
-- ⏳ Wallet
 - ⏳ Settings
-- ⏳ Mobile Responsive Design
+- ⏳ Notifications
 - ⏳ Dark Mode
+- ⏳ Mobile Optimization
 - ⏳ Backend Integration
 - ⏳ AI Financial Assistant
 
@@ -99,42 +114,36 @@ This project is being built as a portfolio project to demonstrate:
 
 # 📸 Screenshots
 
-Coming Soon...
-
----
-
-# 🌐 Live Demo
-
-Coming Soon...
+Screenshots will be added after the project is completed.
 
 ---
 
 # 📈 Future Improvements
 
-- Backend Authentication
-- Real-time Stock Market API
-- Crypto Tracking
-- Portfolio Analytics
+- Authentication System
+- Backend Integration
+- Real-Time Stock Market API
+- Cryptocurrency Tracking
 - AI Investment Suggestions
-- Export Reports
+- Report Export
 - Performance Optimization
 
 ---
 
 # 👨‍💻 Developer
 
-**Aditya Raj**
+## Aditya Raj
 
-UI/UX Designer • Frontend Developer
+**UI/UX Designer • Frontend Developer**
 
-### Connect with me
+### Connect with Me
 
-- 💼 LinkedIn: https://www.linkedin.com/in/adityaraj-uiux/
 - 🌐 Portfolio: https://aditya-portfoliolivewebsite.netlify.app/
+- 💼 LinkedIn: https://www.linkedin.com/in/adityaraj-uiux/
 - 💻 GitHub: https://github.com/aditya-uiux-dev
 
 ---
 
 ## ⭐ Support
 
-If you like this project, consider giving it a ⭐ on GitHub.
+If you found this project helpful, consider giving it a ⭐ on GitHub. It helps support the project and motivates future updates.
