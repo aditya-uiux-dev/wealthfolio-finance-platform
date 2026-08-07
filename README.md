@@ -39,11 +39,21 @@
 - Holdings Overview
 - Performance Tracking
 
----
+### 📈 Investment
+
+- Browse and Explore Investment Assets
+- Category Filters (Stocks, Mutual Funds, Gold, Crypto)
+- Search Investments by Name or Ticker
+- Live Asset Price Display
+- 24-Hour Market Performance
+- Market Capitalization & AUM Overview
+- Buy & Invest Action Buttons
+- Investment Listings Table
+- Pagination for Large Asset Lists
+- Add New Investment Interface
 
 ## 🚀 Upcoming Features
 
-- Investment Management
 - Wallet
 - Analytics
 - Transactions
@@ -99,7 +109,7 @@ This project demonstrates:
 - ✅ Login Page
 - ✅ Dashboard
 - ✅ Portfolio Page
-- ⏳ Investments
+- ✅Investments
 - ⏳ Wallet
 - ⏳ Analytics
 - ⏳ Transactions
