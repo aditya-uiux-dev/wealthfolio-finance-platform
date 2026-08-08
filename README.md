@@ -52,6 +52,20 @@
 - Pagination for Large Asset Lists
 - Add New Investment Interface
 
+
+### 📈 Market
+
+- Browse and explore market assets
+- Market overview and performance tracking
+- Stock price and market data display
+- 24-hour price change tracking
+- Market capitalization overview
+- Asset category filtering
+- Search stocks and market assets
+- Popular and trending assets
+- Market performance insights
+- Quick access to investment assets
+
 ## 🚀 Upcoming Features
 
 - Wallet
@@ -110,9 +124,10 @@ This project demonstrates:
 - ✅ Dashboard
 - ✅ Portfolio Page
 - ✅Investments
+- ✅ Market
+- ⏳ Transactions
 - ⏳ Wallet
 - ⏳ Analytics
-- ⏳ Transactions
 - ⏳ Settings
 - ⏳ Notifications
 - ⏳ Dark Mode
