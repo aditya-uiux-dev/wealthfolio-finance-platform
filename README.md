@@ -66,6 +66,20 @@
 - Market performance insights
 - Quick access to investment assets
 
+### 💳 Transactions
+
+- Complete Transaction Management
+- Income & Expense Tracking
+- Search and Filter Transactions
+- Transaction Categories
+- Payment History
+- Transfer Records
+- Status Indicators
+- Date-Based Filtering
+- Recent Financial Activity
+- Detailed Transaction Overview
+
+
 ## 🚀 Upcoming Features
 
 - Wallet
