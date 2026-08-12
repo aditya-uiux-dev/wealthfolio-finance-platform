@@ -79,12 +79,21 @@
 - Recent Financial Activity
 - Detailed Transaction Overview
 
+### 💳 Wallet
+
+- Wallet Balance Overview
+- Available Balance Tracking
+- Income & Expense Summary
+- Recent Wallet Activity
+- Deposit & Withdrawal Actions
+- Payment & Transfer Tracking
+- Transaction History
+- Wallet Statistics
+- Financial Activity Overview
 
 ## 🚀 Upcoming Features
 
-- Wallet
 - Analytics
-- Transactions
 - Notifications
 - User Settings
 - Dark Mode
