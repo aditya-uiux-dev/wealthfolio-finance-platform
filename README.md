@@ -91,9 +91,21 @@
 - Wallet Statistics
 - Financial Activity Overview
 
+### 📊 Analytics
+
+- Portfolio Performance Overview
+- Investment Performance Tracking
+- Profit & Loss Analysis
+- Return on Investment (ROI)
+- Portfolio Growth Insights
+- Asset Allocation Analysis
+- Performance Charts
+- Investment Distribution
+- Financial Statistics
+- Time-Based Performance Overview
+
 ## 🚀 Upcoming Features
 
-- Analytics
 - Notifications
 - User Settings
 - Dark Mode
@@ -148,9 +160,9 @@ This project demonstrates:
 - ✅ Portfolio Page
 - ✅Investments
 - ✅ Market
-- ⏳ Transactions
-- ⏳ Wallet
-- ⏳ Analytics
+- ✅ Transactions
+- ✅ Wallet
+- ✅ Analytics
 - ⏳ Settings
 - ⏳ Notifications
 - ⏳ Dark Mode
