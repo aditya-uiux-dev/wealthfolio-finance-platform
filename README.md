@@ -104,6 +104,25 @@
 - Financial Statistics
 - Time-Based Performance Overview
 
+### 🎯 Financial Goals
+
+- Financial Goals Overview
+- Create New Financial Goals
+- Goal-Based Savings Tracking
+- Saved Amount & Target Amount
+- Target Date Display
+- Funding Percentage
+- Visual Goal Progress Bars
+- Multiple Goal Cards
+- Goal Status & Progress Overview
+- Goal Categories such as:
+  - 🏠 Home
+  - 🛡️ Emergency Fund
+  - 🚗 New Car
+  - ✈️ Vacation
+  - 🎓 Education
+- Quick Add New Goal Interface
+
 ## 🚀 Upcoming Features
 
 - Notifications
