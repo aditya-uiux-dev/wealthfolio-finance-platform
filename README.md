@@ -123,6 +123,24 @@
   - 🎓 Education
 - Quick Add New Goal Interface
 
+### 🤖 AI Investment Assistant
+
+- AI-Powered Investment Assistance
+- Portfolio & Market Questions
+- Natural Language Financial Queries
+- AI Portfolio Insights
+- Portfolio Performance Analysis
+- Risk & Allocation Insights
+- Portfolio Rebalancing Suggestions
+- Emergency Fund Progress Queries
+- Market Comparison Queries
+- Gold vs. Crypto Allocation Discussions
+- Tax-Saving Investment Discussions
+- Suggested Conversation Prompts
+- New Chat Interface
+- Chat History / Previous Questions
+- Interactive AI Chat Interface
+
 ## 🚀 Upcoming Features
 
 - Notifications
