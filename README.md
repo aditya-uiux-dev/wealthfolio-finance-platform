@@ -141,6 +141,20 @@
 - Chat History / Previous Questions
 - Interactive AI Chat Interface
 
+### 📄 Reports
+
+- Monthly Financial Reports
+- Tax Summary Reports
+- Full Portfolio Reports
+- Portfolio Performance & Allocation Statements
+- Transaction & Investment Summaries
+- Download Reports as PDF
+- Report History
+- Previously Generated Reports
+- Report Period & Generation Date Tracking
+- Report File Size Information
+- Quick Download Actions
+
 ## 🚀 Upcoming Features
 
 - Notifications
