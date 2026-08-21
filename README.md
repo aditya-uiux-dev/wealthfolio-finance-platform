@@ -155,6 +155,21 @@
 - Report File Size Information
 - Quick Download Actions
 
+### 🔔 Notifications
+
+- Market Alerts
+- Dividend Credit Notifications
+- Price Alert Notifications
+- NIFTY 50 Market Updates
+- SIP Transaction Notifications
+- Financial Goal Progress Alerts
+- Wallet & Bank Transaction Notifications
+- Notification Categories
+- Filter Notifications by Type
+- Mark All Notifications as Read
+- Notification Timestamps
+- Read/Unread Notification States
+
 ## 🚀 Upcoming Features
 
 - Notifications
